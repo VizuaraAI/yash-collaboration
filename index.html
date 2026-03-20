@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collaboration Plan — Raj × Yash</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Figtree', system-ui, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    .page { max-width: 720px; margin: 0 auto; padding: 60px 28px 80px; }
+
+    h1 { font-size: 36px; font-weight: 700; letter-spacing: -1.5px; line-height: 1.15; margin-bottom: 8px; }
+    h1 span { background: linear-gradient(135deg, #7c3aed, #2563eb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { font-size: 17px; color: #525252; margin-bottom: 40px; }
+
+    h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; margin: 48px 0 16px; padding-top: 24px; border-top: 1px solid #e5e5e5; }
+    h2:first-of-type { border-top: none; padding-top: 0; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; color: #1a1a1a; }
+
+    p { font-size: 15px; color: #374151; margin-bottom: 14px; }
+    strong { color: #1a1a1a; }
+
+    .label { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 12px; border-radius: 6px; margin-bottom: 16px; }
+    .label-purple { background: #ede9fe; color: #5b21b6; }
+    .label-blue { background: #dbeafe; color: #1e40af; }
+    .label-green { background: #d1fae5; color: #065f46; }
+    .label-orange { background: #ffedd5; color: #9a3412; }
+
+    .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 14px; padding: 24px 28px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+    .card-header { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+    .card-meta { font-size: 13px; color: #737373; margin-bottom: 10px; }
+    .card p { margin-bottom: 8px; }
+
+    .timeline { position: relative; padding-left: 28px; }
+    .timeline::before { content: ''; position: absolute; left: 8px; top: 4px; bottom: 4px; width: 2px; background: #e5e5e5; }
+    .t-item { position: relative; margin-bottom: 20px; }
+    .t-item::before { content: ''; position: absolute; left: -24px; top: 6px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #7c3aed; background: #fff; }
+    .t-item.done::before { background: #7c3aed; }
+    .t-date { font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.05em; }
+    .t-title { font-size: 15px; font-weight: 600; color: #1a1a1a; }
+    .t-desc { font-size: 14px; color: #525252; }
+
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th { text-align: left; padding: 8px 12px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #737373; background: #fafafa; border-bottom: 1px solid #e5e5e5; }
+    td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; color: #374151; }
+    tr:last-child td { border-bottom: none; }
+
+    .papers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0; }
+    .paper-card { background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; padding: 20px; }
+    .paper-num { font-size: 11px; font-weight: 700; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+    .paper-title { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+    .paper-venue { font-size: 12px; color: #737373; }
+    .paper-desc { font-size: 13px; color: #525252; margin-top: 8px; }
+
+    .highlight { background: #fef7ee; border: 1px solid #fed7aa; border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-size: 14px; color: #9a3412; }
+
+    .summary-box { background: linear-gradient(135deg, rgba(124,58,237,0.05), rgba(37,99,235,0.05)); border: 1px solid rgba(124,58,237,0.15); border-radius: 14px; padding: 28px; margin: 24px 0; }
+    .summary-box h3 { margin-top: 0; color: #5b21b6; }
+
+    .footer { text-align: center; font-size: 13px; color: #737373; margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e5e5; }
+    .footer a { color: #7c3aed; text-decoration: none; }
+
+    @media (max-width: 600px) { .papers-grid { grid-template-columns: 1fr; } .page { padding: 32px 20px 60px; } h1 { font-size: 28px; } }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <h1>Raj × Yash<br><span>Collaboration Plan</span></h1>
+  <p class="subtitle">A partnership across research, education, and industry — April to August 2026.</p>
+
+  <!-- ─── Overview ──────────────────────────────── -->
+  <h2>Overview</h2>
+  <p>This document outlines a structured collaboration between <strong>Dr. Raj Dandekar</strong> (Vizuara AI Labs) and <strong>Yash Dixit</strong> (AI/ML Product Manager, Apple) across three tracks:</p>
+
+  <div style="display:flex; gap:12px; flex-wrap:wrap; margin:20px 0;">
+    <div class="card" style="flex:1; min-width:180px; text-align:center; padding:18px;">
+      <div style="font-size:28px; margin-bottom:6px;">🎤</div>
+      <div style="font-size:14px; font-weight:600;">Guest Lecture</div>
+      <div style="font-size:12px; color:#737373;">Inference Workshop</div>
+    </div>
+    <div class="card" style="flex:1; min-width:180px; text-align:center; padding:18px;">
+      <div style="font-size:28px; margin-bottom:6px;">📄</div>
+      <div style="font-size:14px; font-weight:600;">4 Research Papers</div>
+      <div style="font-size:12px; color:#737373;">Co-authored, mentor role</div>
+    </div>
+    <div class="card" style="flex:1; min-width:180px; text-align:center; padding:18px;">
+      <div style="font-size:28px; margin-bottom:6px;">💼</div>
+      <div style="font-size:14px; font-weight:600;">Industry Consulting</div>
+      <div style="font-size:12px; color:#737373;">Advisory & co-design</div>
+    </div>
+  </div>
+
+  <!-- ─── Track 1: Guest Lecture ────────────────── -->
+  <h2>Track 1: Guest Lecture at Inference Workshop</h2>
+  <span class="label label-purple">Confirmed — April/May 2026</span>
+
+  <div class="card">
+    <div class="card-header">Guest Session: AI Products on Apple Silicon</div>
+    <div class="card-meta">90 minutes · Live on Zoom · 200+ engineers</div>
+    <p>Yash delivers a guest lecture at Vizuara's Inference Engineering Workshop, bringing the <strong>product manager's perspective</strong> on on-device AI — how Apple thinks about edge vs cloud tradeoffs, what product decisions drive inference architecture choices, and what engineers building for Apple Silicon need to know.</p>
+    <p><strong>Suggested date:</strong> May 1, 2026 (flexible)</p>
+    <p><strong>Honorarium:</strong> $300</p>
+    <p><strong>Audience:</strong> 200+ ML engineers who are deploying models on Mac Mini, Raspberry Pi, and Jetson</p>
+  </div>
+
+  <div class="highlight">
+    <strong>Note on Apple policy:</strong> Topic can be kept general (product thinking for edge AI) rather than Apple-specific, if needed. Raj will work with Yash to find the right framing.
+  </div>
+
+  <!-- ─── Track 2: Research Papers ──────────────── -->
+  <h2>Track 2: Research Publications (4 Papers)</h2>
+  <span class="label label-blue">April – August 2026</span>
+
+  <h3>How This Works</h3>
+  <p>After every Vizuara bootcamp, top students enter a <strong>2-month research phase</strong> where they work on original research projects. Yash joins as a <strong>research mentor</strong> — guiding 4-5 student teams on paper-worthy projects. The students do the heavy lifting (experiments, writing, implementation). Yash provides:</p>
+
+  <ul style="margin:12px 0 20px 20px; font-size:15px; color:#374151;">
+    <li style="margin-bottom:6px;">Industry perspective on problem framing and motivation</li>
+    <li style="margin-bottom:6px;">Feedback on experiment design and methodology</li>
+    <li style="margin-bottom:6px;">Review and refinement of paper drafts (using AI tools like Claude for efficiency)</li>
+    <li style="margin-bottom:6px;">Co-authorship on the final submissions</li>
+  </ul>
+
+  <p><strong>Time commitment:</strong> ~2-3 hours/week for 8 weeks. One 30-min check-in per team per week (can batch into a single 2-hour session). Paper review/feedback asynchronous via Google Docs + Claude.</p>
+
+  <h3>The 4 Papers</h3>
+  <div class="papers-grid">
+    <div class="paper-card">
+      <div class="paper-num">Paper 1</div>
+      <div class="paper-title">Edge Inference Benchmarking</div>
+      <div class="paper-desc">Systematic benchmarking of LLM inference across Mac Mini, Raspberry Pi 5, and Jetson Orin Nano — measuring tok/s, TTFT, memory, power, and quality across quantization levels.</div>
+      <div class="paper-venue">Target: NeurIPS 2026 Workshop or EMNLP 2026</div>
+    </div>
+    <div class="paper-card">
+      <div class="paper-num">Paper 2</div>
+      <div class="paper-title">Speculative Decoding on Edge</div>
+      <div class="paper-desc">Ablation study of speculative decoding on resource-constrained devices — draft model sizes, acceptance rates, and real-world speedups on Jetson and Apple Silicon.</div>
+      <div class="paper-venue">Target: NeurIPS 2026 Workshop or MLSys 2027</div>
+    </div>
+    <div class="paper-card">
+      <div class="paper-num">Paper 3</div>
+      <div class="paper-title">Voice Pipeline Latency on Edge</div>
+      <div class="paper-desc">End-to-end analysis of ASR + LLM + TTS pipeline latency on edge devices — where the bottlenecks are, what optimizations work, and what's needed for real-time voice AI.</div>
+      <div class="paper-venue">Target: EMNLP 2026 or Interspeech 2026</div>
+    </div>
+    <div class="paper-card">
+      <div class="paper-num">Paper 4</div>
+      <div class="paper-title">Quantization Quality Frontier</div>
+      <div class="paper-desc">Mapping the complete Pareto frontier of quality vs compression for edge deployment — perplexity, task accuracy, and generation quality across Q8 to Q2 on multiple model families.</div>
+      <div class="paper-venue">Target: NeurIPS 2026 Main or COLM 2026</div>
+    </div>
+  </div>
+
+  <h3>Conference Deadlines & Timeline</h3>
+  <table>
+    <thead><tr><th>Conference</th><th>Deadline</th><th>Date</th><th>Fit</th></tr></thead>
+    <tbody>
+      <tr><td><strong>NeurIPS 2026</strong> (main)</td><td>May 4-6, 2026</td><td>Dec 6-12, 2026</td><td>Paper 4 (if ready early)</td></tr>
+      <tr><td><strong>EMNLP 2026</strong> (ARR May)</td><td>May 25, 2026</td><td>Oct 24-29, 2026</td><td>Papers 1, 3</td></tr>
+      <tr><td><strong>NeurIPS 2026 Workshops</strong></td><td>~Aug-Sep 2026 (TBD)</td><td>Dec 2026</td><td>Papers 1, 2 (best fit)</td></tr>
+      <tr><td><strong>COLM 2026</strong></td><td>Mar 31, 2026 (passed)</td><td>Oct 6-9, 2026</td><td>Next year</td></tr>
+      <tr><td><strong>MLSys 2027</strong></td><td>~Oct 2026 (est.)</td><td>May 2027</td><td>Papers 1, 2</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Research Timeline</h3>
+  <div class="timeline">
+    <div class="t-item">
+      <div class="t-date">Apr 15 – May 9</div>
+      <div class="t-title">Workshop Phase</div>
+      <div class="t-desc">Students learn inference engineering. Yash gives guest lecture. Identify top students for research teams.</div>
+    </div>
+    <div class="t-item">
+      <div class="t-date">May 10 – May 25</div>
+      <div class="t-title">Research Kickoff</div>
+      <div class="t-desc">Form 4 student teams (2-3 students each). Define paper scope, related work survey. Target EMNLP ARR May deadline (May 25) for Papers 1 & 3 if ready.</div>
+    </div>
+    <div class="t-item">
+      <div class="t-date">May 26 – Jun 30</div>
+      <div class="t-title">Experiments & Writing</div>
+      <div class="t-desc">Students run experiments on hardware, collect data, write drafts. Yash reviews weekly. Use Claude for draft refinement and literature review.</div>
+    </div>
+    <div class="t-item">
+      <div class="t-date">Jul 1 – Jul 31</div>
+      <div class="t-title">Paper Finalization</div>
+      <div class="t-desc">Polish papers, complete ablation studies, finalize results tables. Prepare camera-ready or submit to next venue.</div>
+    </div>
+    <div class="t-item">
+      <div class="t-date">Aug – Sep</div>
+      <div class="t-title">NeurIPS Workshop Submissions</div>
+      <div class="t-desc">Submit to NeurIPS 2026 workshops (deadlines typically Aug-Sep). This is the sweet spot for 4 papers.</div>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <strong>Realistic expectation:</strong> NeurIPS workshop papers have the highest acceptance rate (~40-60%) and shortest review cycles. Targeting 4 NeurIPS workshop submissions is very achievable in this timeline. 1-2 of the stronger papers can also target EMNLP or MLSys main conferences.
+  </div>
+
+  <h3>Yash's Role on Each Paper</h3>
+  <table>
+    <thead><tr><th>Activity</th><th>Time/Week</th><th>How</th></tr></thead>
+    <tbody>
+      <tr><td>Weekly check-in with teams</td><td>1-2 hrs</td><td>Single batch Zoom call covering all 4 teams</td></tr>
+      <tr><td>Paper draft review</td><td>1 hr</td><td>Async — Google Docs comments, use Claude for detailed feedback</td></tr>
+      <tr><td>Industry framing & motivation</td><td>30 min</td><td>Async — provide the "why this matters" angle from Apple/industry perspective</td></tr>
+      <tr><td><strong>Total</strong></td><td><strong>~3 hrs/week</strong></td><td>For 8 weeks (May 10 – Jul 31)</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>Authorship:</strong> Yash appears as co-author (typically 2nd or 3rd author) on all 4 papers, credited as research mentor with industry affiliation. This is standard practice for industry-academic collaborations.</p>
+
+  <!-- ─── Track 3: Industry Consulting ──────────── -->
+  <h2>Track 3: Industry Consulting & Advisory</h2>
+  <span class="label label-green">Ongoing</span>
+
+  <div class="card">
+    <div class="card-header">Vizuara Industry Advisory</div>
+    <p>Yash joins Vizuara's network as an <strong>industry advisor</strong> for future bootcamps and workshops. This includes:</p>
+    <ul style="margin:8px 0 0 20px; font-size:14px; color:#374151;">
+      <li style="margin-bottom:6px;"><strong>Curriculum review:</strong> Feedback on bootcamp content from the product/industry perspective</li>
+      <li style="margin-bottom:6px;"><strong>Student mentorship:</strong> Optional office hours for top students interested in AI product roles</li>
+      <li style="margin-bottom:6px;"><strong>Future guest lectures:</strong> Recurring speaker slot across Vizuara's bootcamp calendar</li>
+      <li style="margin-bottom:6px;"><strong>Co-designed workshops:</strong> Potential to co-create a workshop on "AI Product Management" or "Building AI Products on Apple Silicon"</li>
+    </ul>
+  </div>
+
+  <!-- ─── Summary ───────────────────────────────── -->
+  <h2>What Yash Gets by August 2026</h2>
+
+  <div class="summary-box">
+    <h3>Deliverables</h3>
+    <table>
+      <thead><tr><th>Deliverable</th><th>Timeline</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td><strong>1 guest lecture</strong> at Inference Workshop (200+ engineers)</td><td>May 2026</td><td>Ready to schedule</td></tr>
+        <tr><td><strong>4 research papers</strong> co-authored as mentor</td><td>May – Aug 2026</td><td>Starts after workshop</td></tr>
+        <tr><td><strong>4 conference submissions</strong> (NeurIPS workshops, EMNLP, MLSys)</td><td>Aug – Oct 2026</td><td>Follows paper completion</td></tr>
+        <tr><td><strong>Industry advisory role</strong> at Vizuara AI Labs</td><td>Ongoing</td><td>Starts immediately</td></tr>
+        <tr><td><strong>Network access</strong> to Vizuara's guest speaker lineup</td><td>Ongoing</td><td>Active</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Total Time Commitment</h3>
+  <table>
+    <thead><tr><th>Activity</th><th>When</th><th>Hours</th></tr></thead>
+    <tbody>
+      <tr><td>Guest lecture prep + delivery</td><td>May 2026</td><td>~4 hours total</td></tr>
+      <tr><td>Research mentorship (8 weeks × 3 hrs)</td><td>May – Jul 2026</td><td>~24 hours total</td></tr>
+      <tr><td>Paper finalization & submission</td><td>Jul – Aug 2026</td><td>~8 hours total</td></tr>
+      <tr><td><strong>Total</strong></td><td></td><td><strong>~36 hours over 4 months</strong></td></tr>
+    </tbody>
+  </table>
+
+  <p style="font-size:14px; color:#525252; margin-top:16px;">That's approximately <strong>2 hours per week</strong> on average — very manageable alongside a full-time role. Most of the heavy lifting (experiments, data collection, writing) is done by the student teams. Yash's role is guidance, framing, and review.</p>
+
+  <!-- ─── Next Steps ────────────────────────────── -->
+  <h2>Next Steps</h2>
+  <div class="timeline">
+    <div class="t-item">
+      <div class="t-date">This Week</div>
+      <div class="t-title">Align on this plan</div>
+      <div class="t-desc">Raj and Yash review this document, discuss, and finalize scope.</div>
+    </div>
+    <div class="t-item">
+      <div class="t-date">By April 1</div>
+      <div class="t-title">Confirm guest lecture date</div>
+      <div class="t-desc">Lock in the date for Yash's session at the Inference Workshop.</div>
+    </div>
+    <div class="t-item">
+      <div class="t-date">April 15</div>
+      <div class="t-title">Workshop begins</div>
+      <div class="t-desc">Yash is announced as a guest lecturer. Raj identifies top students for research teams.</div>
+    </div>
+    <div class="t-item">
+      <div class="t-date">May 10</div>
+      <div class="t-title">Research phase kicks off</div>
+      <div class="t-desc">4 student teams formed. Yash meets them, defines paper scope, sets weekly cadence.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Prepared by <a href="https://vizuara.ai">Vizuara AI Labs</a> · March 2026<br>
+    <span style="font-size:12px;">This is a private collaboration document.</span>
+  </div>
+
+</div>
+</body>
+</html>

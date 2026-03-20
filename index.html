@@ -227,8 +227,63 @@
   </ul>
  </div>
 
+ <!-- ─── Workshop Curriculum ──────────────────── -->
+ <h2>Inference Workshop Curriculum</h2>
+ <span class="label label-purple">15 Lectures · 30 Visual Guides · 30 Code Labs</span>
+
+ <p>The workshop covers the <strong>full inference stack</strong> across three parts. This is the context for the guest lecture and the research papers — students will have learned all of this before the research phase begins.</p>
+
+ <h3>Part I: Foundations (Lectures 1–4)</h3>
+ <table>
+  <thead><tr><th>#</th><th>Lecture</th><th>Key Topics</th></tr></thead>
+  <tbody>
+   <tr><td>L1</td><td>The Inference Stack</td><td>Tokenization, forward pass, autoregressive loop, sampling strategies</td></tr>
+   <tr><td>L2</td><td>Transformer Deep Dive</td><td>Attention (MHA, MQA, GQA), positional encoding, transformer block internals</td></tr>
+   <tr><td>L3</td><td>Prefill, Decode & KV Cache</td><td>Prefill vs decode phases, KV cache mechanics, memory requirements</td></tr>
+   <tr><td>L4</td><td>GPU Architecture & Roofline</td><td>SMs, tensor cores, memory hierarchy, compute vs memory bound, roofline model</td></tr>
+  </tbody>
+ </table>
+
+ <h3>Part II: Optimization (Lectures 5–8)</h3>
+ <table>
+  <thead><tr><th>#</th><th>Lecture</th><th>Key Topics</th></tr></thead>
+  <tbody>
+   <tr><td>L5</td><td>Quantization</td><td>FP16, BF16, INT8, INT4, GPTQ, AWQ, GGUF format, quality vs speed tradeoffs</td></tr>
+   <tr><td>L6</td><td>Speculative Decoding</td><td>Draft-target, n-gram speculation, EAGLE, Medusa, acceptance sampling</td></tr>
+   <tr><td>L7</td><td>FlashAttention & Kernel Fusion</td><td>IO-aware tiling, online softmax, fused kernels, memory bandwidth optimization</td></tr>
+   <tr><td>L8</td><td>Inference Engines & Serving</td><td>vLLM, TensorRT-LLM, SGLang, continuous batching, PagedAttention</td></tr>
+  </tbody>
+ </table>
+
+ <h3>Part III: Production & Edge (Lectures 9–15)</h3>
+ <table>
+  <thead><tr><th>#</th><th>Lecture</th><th>Key Topics</th></tr></thead>
+  <tbody>
+   <tr><td>L9</td><td>MoE & Model Parallelism</td><td>Mixture of experts, tensor/pipeline/expert parallelism, multi-GPU communication</td></tr>
+   <tr><td>L10</td><td>Edge Deployment</td><td>llama.cpp on ARM, MLX on Apple Silicon, Jetson CUDA, model selection for edge</td></tr>
+   <tr><td>L11</td><td>Voice Pipeline</td><td>Whisper ASR + LLM + Piper TTS, end-to-end on edge, streaming, latency breakdown</td></tr>
+   <tr><td>L12</td><td>Multimodal Inference</td><td>Vision-language models, image generation, video generation, few-step diffusion</td></tr>
+   <tr><td>L13</td><td>Production Systems</td><td>Cold starts, canary deployments, autoscaling, cache-aware routing, multi-cloud</td></tr>
+   <tr><td>L14</td><td>Structured Output & Evals</td><td>JSON schema compliance, logit biasing, guided decoding, evaluation harnesses</td></tr>
+   <tr><td>L15</td><td>Fine-Tuning & Distillation</td><td>LoRA, QLoRA, knowledge distillation, cloud-to-edge deployment pipeline</td></tr>
+  </tbody>
+ </table>
+
+ <h3>Hardware Labs</h3>
+ <p>Students deploy and benchmark on <strong>three real devices</strong> throughout the workshop:</p>
+ <table>
+  <thead><tr><th>Device</th><th>What Students Do</th></tr></thead>
+  <tbody>
+   <tr><td><strong>Mac Mini</strong> (Apple Silicon)</td><td>MLX framework, Metal GPU inference, first inference, model comparison</td></tr>
+   <tr><td><strong>Raspberry Pi 5</strong> (8GB, ARM CPU)</td><td>Quantization experiments (Q8 vs Q4 vs Q2), thermal throttling, memory limits</td></tr>
+   <tr><td><strong>Jetson Orin Nano</strong> (CUDA GPU)</td><td>GPU vs CPU comparison, speculative decoding, full voice pipeline</td></tr>
+  </tbody>
+ </table>
+
+ <p style="margin-top:16px;"><a href="https://vizuaraai.github.io/inference-engineering-visual-guides/" target="_blank" style="color:#7c3aed; font-weight:600; text-decoration:none;">View the full interactive curriculum with 30 visual guides and 30 code labs →</a></p>
+
  <!-- ─── Summary ───────────────────────────────── -->
- <h2>What Gets by August 2026</h2>
+ <h2>What Gets Delivered by August 2026</h2>
 
  <div class="summary-box">
   <h3>Deliverables</h3>
